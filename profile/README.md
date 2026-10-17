@@ -26,6 +26,8 @@ npx mulmoterminal@latest
 answer can be a wiki page, a spreadsheet, a chart, a form or a 3D scene instead of more text.
 Memories, data and apps stay as plain files in your workspace, readable without us.
 
+![MulmoClaude — a podcast tracker it built on request, shown as a gallery of episodes with ratings and progress](https://raw.githubusercontent.com/receptron/.github/main/profile/images/mulmoclaude.jpg)
+
 ```sh
 npx mulmoclaude@latest
 ```
@@ -49,6 +51,8 @@ prototype for chat that is not a text stream: you keep speaking, and images mate
 become explorable and games turn playable on the canvas beside the conversation. Each kind of
 answer is a plugin on the GUI Chat Protocol — the same protocol MulmoClaude and MulmoTerminal
 speak — so teaching it something new is a package rather than a fork.
+
+![MulmoChat — asked for a Tokyo travel guide with pictures, it writes the guide on the canvas beside the conversation](https://raw.githubusercontent.com/receptron/.github/main/profile/images/mulmochat.jpg)
 
 Run it from source, with your own API keys:
 
