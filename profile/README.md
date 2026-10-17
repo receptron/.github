@@ -12,6 +12,8 @@ parallel coding agents. Claude Code, Codex and six more CLIs side by side, each 
 with the one that needs you marked in colour. Sessions survive a reload (tmux), work isolates in
 git worktrees, and a push reaches your phone when a turn finishes.
 
+![MulmoTerminal — a grid of live Claude Code sessions, each colour-coded by state, updating in real time](https://raw.githubusercontent.com/receptron/mulmoterminal/main/docs/guide/images/hero.gif)
+
 ```sh
 npx mulmoterminal@latest
 ```
@@ -40,6 +42,24 @@ npx mulmocast
 
 Also as a desktop app: **[mulmocast-app](https://github.com/receptron/mulmocast-app)**.
 
+## Keep talking while the answer draws itself
+
+**[MulmoChat](https://github.com/receptron/MulmoChat)** — in active development again. A research
+prototype for chat that is not a text stream: you keep speaking, and images materialise, maps
+become explorable and games turn playable on the canvas beside the conversation. Each kind of
+answer is a plugin on the GUI Chat Protocol — the same protocol MulmoClaude and MulmoTerminal
+speak — so teaching it something new is a package rather than a fork.
+
+Run it from source, with your own API keys:
+
+```sh
+git clone https://github.com/receptron/MulmoChat.git
+```
+
+[The idea](https://github.com/receptron/MulmoChat/blob/main/docs/LLM_OS.md) ·
+[Architecture](https://github.com/receptron/MulmoChat/blob/main/docs/WHITEPAPER.md) ·
+[Writing a plugin](https://github.com/receptron/MulmoChat/blob/main/docs/TOOLPLUGIN.md)
+
 ## Build on the engines
 
 **[GraphAI](https://github.com/receptron/graphai)** — describe an agentic workflow as a
@@ -55,10 +75,6 @@ in one forward pass. No Python at runtime.
 before the category had a name, and the ground the rest of this work was built on. A new agent is
 a manifest file, and `/name` switches between them.
 
-**[MulmoChat](https://github.com/receptron/MulmoChat)** — in active development again: a
-research prototype where images, maps and playable games appear on a canvas while the
-conversation is still going.
-
 ## Who we are
 
 [Satoshi Nakajima](https://github.com/snakajima), architect of Windows 95 at Microsoft, and
@@ -67,5 +83,5 @@ together since 2015, across four unrelated domains, and the core has been open s
 
 More at the [Singularity Society](https://singularitysociety.org).
 
-MulmoTerminal, MulmoClaude, GraphAI, SlashGPT and @receptron/laya are MIT. MulmoCast and
-MulmoChat are AGPL-3.0.
+MulmoTerminal, MulmoClaude, MulmoChat, GraphAI, SlashGPT and @receptron/laya are MIT.
+MulmoCast is AGPL-3.0.
